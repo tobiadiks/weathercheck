@@ -1,13 +1,249 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(5, 1, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
+#root{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(5, 1, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/*login style starts here */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.login-container .logo-container .logo{
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.login-container form {
+ margin-top: 35px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+ margin-bottom: 25px;
+}
+
+.login-container form input{
+  padding: 8px;
+  background-color: rgb(5, 1, 24);
+  color: rgb(218, 222, 224);
+  border: solid 0.5px white;
+  margin-bottom: 25px;
+}
+
+
+.login-container .btn-container{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login-container .btn-container a:nth-child(1){
+  padding: 8px 30px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(5, 1, 24);
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: rgb(218, 222, 224);
+}
+
+.login-container .btn-container a{
+  text-decoration: underline;
+  font-size: 10px;
+  color: white;
+}
+
+.forgot-pw-container{
+ position: absolute;
+ top: 90%;
+}
+
+.forgot-pw-container span{
+  font-size: 8px;
+  font-weight: 200;
+  color: rgb(218, 222, 224);
+ }
+
+ /*loginComponent style ends here */
+
+
+ /*weatherDashboardComponent style starts here */
+.dashboard-container {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.dashboard-container .sub-container-1{
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 50px;
+}
+
+.dashboard-container .sub-container-1 span:nth-child(1){
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(218, 222, 224);
+  text-align: center;
+}
+
+.dashboard-container .sub-container-1 span:nth-child(2){
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(218, 222, 224);
+  text-transform: uppercase;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.dashboard-container .weather-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+  margin-bottom: 20px;
+}
+
+.dashboard-container .weather-icon img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  text-align: center;
+  color: rgb(218, 222, 224);
+  font-size: 10px;
+}
+
+.dashboard-container .sub-container-2{
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 50px;
+}
+
+.dashboard-container .sub-container-2 span:nth-child(1){
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(218, 222, 224);
+  margin-top: 2px;
+  text-align: center;
+}
+
+.dashboard-container .sub-container-2 span:nth-child(1) sup{
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(218, 222, 224);
+  text-align: center;
+}
+
+.dashboard-container .sub-container-2 span{
+  font-size: 10px;
+  font-weight: 300;
+  color: rgb(218, 222, 224);
+  text-transform: uppercase;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.dashboard-container .sub-container-2 .h-divider{
+  border-top: solid 0.5px rgb(218, 222, 224);
+  width: 12px;
+  margin: 18px 0px;
+}
+
+
+.dashboard-container .sub-container-3{
+ display: block;
+}
+
+.dashboard-container .sub-container-3 ul{
+display: flex;
+flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+.dashboard-container .sub-container-3 ul .v-divider{
+  border: solid 0.5px rgb(218, 222, 224);
+  height: 12px;
+  margin: 0px 18px;
+  list-style: none;
+}
+
+.dashboard-container .sub-container-3 ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-container .sub-container-3 ul li span:nth-child(1){
+font-size: 12px;
+color: rgb(218, 222, 224);
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.dashboard-container .sub-container-3 ul li span:nth-child(2){
+  font-size: 8px;
+  color: rgb(218, 222, 224);
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+  .dashboard-container .sub-container-3 ul li span:nth-child(3){
+    font-size: 15px;
+    color: rgb(218, 222, 224);
+    text-align: center;
+    text-transform: lowercase;
+    }
+
+    .dashboard-container .sub-container-3 ul li span:nth-child(3) sup{
+      font-size: 6px;
+      color: rgb(218, 222, 224);
+      text-align: center;
+      }
+
+  /*weatherDashboardComponent style ends here */
