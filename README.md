@@ -1,4 +1,4 @@
-# Check Build Here (https://weatherboom.netliy.app).
+# Check Build Here (https://weatherboom.netlify.app).
 
 
 
